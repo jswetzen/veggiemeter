@@ -3,8 +3,6 @@ import { useSelector, useDispatch, connect } from "react-redux";
 import styles from "./VeggieMeter.module.css";
 import { selectName, selectUIState, selectVeggies, check, fetchUIState, fetchChecks, selectedDay, selectedName } from "./veggieSlice"
 
-import { apple } from './apple.png'
-
 /*
 const Name = ({name}) => {
     return <span className={styles.name}>{name}</span>;
