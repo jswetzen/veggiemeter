@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - "13"
+script:
+  - echo 'Build starts!!'
+  - echo 'Installing Deps!'
+  - yarn
+  - echo 'Compiling!'
+  - yarn build
+after_success:
+    - find build -path build/veggies -prune -o -type f -print -exec curl --ftp-create-dirs -T {} ftp://${FTP_SITE} --user ${FTP_USER}:${FTP_PASSWORD} \;
