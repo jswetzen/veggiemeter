@@ -1,0 +1,71 @@
+.namePicker {
+  padding-bottom: 32px;
+}
+
+.veggieList {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.veggieButton {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 8px;
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  position: relative;
+  padding: 0px;
+  border: 0px !important;
+  padding: 0px!important;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row:not(:last-child) {
+  margin-bottom: 16px;
+  margin-right: 8px;
+}
+
+.button:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  appearance: none;
+  font-size: 32px;
+  padding-left: 12px;
+  padding-right: 12px;
+  outline: none;
+  border: 2px solid transparent;
+  color: #0075ad;
+  padding-bottom: 4px;
+  cursor: pointer;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.15s;
+}
+
+.button:hover, .button:focus {
+  border: 2px solid rgba(112, 112, 112, 0.4);
+}
+
+.buttonActive {
+  background-color: rgb(120, 146, 167);
+  color: white;
+}
+
+.star {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  font-size: 80px;
+  color: gold;
+  text-shadow: 2px 2px 9px #000, 2px 2px 4px #000;
+}
